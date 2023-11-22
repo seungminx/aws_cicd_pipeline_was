@@ -38,7 +38,7 @@ phases:
       - rm -rf static/
       - rm -rf venv/
       - cd ..
-      - tar -czvf django-ecommerce.tar.gz src/
+      - tar -czvf django-ecommerce.tar.gz aws_cicd_pipeline_was/
 
       
 artifacts:
