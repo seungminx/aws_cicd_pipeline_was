@@ -114,14 +114,15 @@ WSGI_APPLICATION = 'django_ecommerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+
 DATABASES = {
         "default": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": db_dbname,
-        "USER": "admin",
-       "PASSWORD": "admin123",
-        "HOST": "10.0.118.26",
-        "PORT": "3306",
+        "USER": db_user,
+        "PASSWORD": db_password,
+        "HOST": db_endpoint,
+        "PORT": db_port,
         "TEST": {
           "NAME": "mytestdatabase", # 추가 
       },   
@@ -131,8 +132,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
-
 
 
 
